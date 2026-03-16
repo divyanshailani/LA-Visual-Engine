@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Blender
+*.blend1
+*.blend2
+
+# macOS
+.DS_Store
+Icon
+
+# Renders
+Phase_2_Blender/renders/
+*.mp4
+*.mov
+*.exr
