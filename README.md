@@ -11,13 +11,26 @@
 
 ---
 
+## 🎬 Live Demo — Phase 1
+
+> Run `python3 preview.py` and pick any preset. Here's what it looks like:
+
+| det = 0 Collapse | Rotation 90° | Shear |
+|:---:|:---:|:---:|
+| ![collapse demo](docs/assets/collapse_demo.gif) | ![rotation demo](docs/assets/rotation_demo.gif) | ![shear demo](docs/assets/shear_demo.gif) |
+| Space folds to a line | Area preserved, î ĵ swap | Grid slides, det stays 1 |
+
+> 📸 *GIFs coming soon — Phase 1 is complete and running. Clone & run to see it live.*
+
+---
+
 ## 🧠 What This Proves
 
 This is not a tutorial project. Every line of code here **visually proves** a concept from linear algebra — the same concepts that power every AI model, graphics engine, and physics simulation on the planet.
 
-| Concept | Visualization |
+| Concept | What You See |
 |---|---|
-| **Basis vectors î ĵ** | Teal + red arrows transforming live with the grid |
+| **Basis vectors î ĵ** | Red + teal arrows morphing live with the grid |
 | **Matrix × vector** | Every point in 2D space multiplied by M |
 | **Linear transformation** | Grid morphing smoothly from identity → M |
 | **det(M) as area scale** | Grid stretches/shrinks by exactly det(M) |
@@ -30,11 +43,11 @@ This is not a tutorial project. Every line of code here **visually proves** a co
 ## 🏗️ Build System — 2 Phases
 
 ```
-Phase 1 → Python + NumPy + Matplotlib
+Phase 1 → Python + NumPy + Matplotlib    ✅ Complete
    Prove the math works. Pure logic. Runs in terminal.
 
-Phase 2 → Blender bpy (coming post-exams)
-   Same math. Now GPU-rendered in 3D. Cinematic dark void.
+Phase 2 → Blender bpy                   ⏳ Coming post-exams
+   Same math. Now GPU-rendered in 3D cinematic dark void.
 ```
 
 ---
@@ -51,9 +64,11 @@ LA-Visual-Engine/
 │   ├── math_utils.py    ← lerp, compose, det_status, verify_composition
 │   └── preview.py       ← Matplotlib CLI animator — run this
 │
-└── 🎨 Phase_2_Blender/  ← Coming soon
-    ├── scenes/
-    └── utils/
+├── 🎨 Phase_2_Blender/  ← Coming soon
+│   ├── scenes/
+│   └── utils/
+│
+└── 📸 docs/assets/      ← Demo GIFs
 ```
 
 ---
@@ -69,16 +84,16 @@ cd Phase_1_Logic
 python3 preview.py
 ```
 
-**Available presets:**
+**Choose from 8 presets when prompted:**
 ```
-identity       → No change         det =  1
-rotation_90    → Rotate 90°        det =  1  (area preserved)
-shear          → Horizontal shear  det =  1  (area preserved)
-scale2x        → Scale 2x          det =  4  (area ×4)
-reflection_x   → Reflect over x    det = -1  (orientation flips)
-projection_x   → Project to x-axis det =  0  (collapse!)
-det_0_collapse → Space collapses   det =  0
-det_neg_flip   → Orientation flip  det = -1
+identity       → No change          det =  1
+rotation_90    → Rotate 90°         det =  1  (area preserved)
+shear          → Horizontal shear   det =  1  (area preserved)
+scale2x        → Scale 2x           det =  4  (area ×4)
+reflection_x   → Reflect over x     det = -1  (orientation flips)
+projection_x   → Project to x-axis  det =  0  (collapse!)
+det_0_collapse → Space collapses    det =  0
+det_neg_flip   → Orientation flip   det = -1
 ```
 
 ---
@@ -109,20 +124,20 @@ det(M₂ · M₁) = det(M₂) × det(M₁)
 
 ---
 
-## 📐 Part of the Simulation Architect Path — 9 Projects Total
+## 📐 Part of the Simulation Architect Path — 10 Projects Total
 
 | # | Project | Core Concept | Status |
 |---|---|---|---|
 | **01** | **2D Linear Transform Animator** ← *here* | Vectors, Det, Basis | 🔄 Phase 1 done |
-| 02 | Coordinate System Translator | Change of Basis | ⏳ Upcoming |
-| 03 | Geometric Linear System Solver | Cramer's Rule | ⏳ Upcoming |
-| 04 | Eigenvector Explorer | Eigenvalues, Stable Axes | ⏳ Upcoming |
-| 05A | Solar System Simulator | Real Physics + NASA JPL API | ⏳ Upcoming |
-| 05B | PROJECT VOID | Non-Uniform Gravity + A* Algorithm | ⏳ Upcoming |
-| 06 | Neural Network Visual Simulator | Backprop, PyTorch | ⏳ Upcoming |
-| 07 | Optical Fiber & Internet Simulator | Wave Physics | ⏳ Upcoming |
-| 08 | VOID AI — RL Navigator | Gymnasium + Stable Baselines3 | ⏳ Upcoming |
-| 09 | Omniverse Digital Twin | OpenUSD + NVIDIA Omniverse | ⏳ Upcoming |
+| 02 | Coordinate System Translator | Change of Basis | ⏳ |
+| 03 | Geometric Linear System Solver | Cramer's Rule | ⏳ |
+| 04 | Eigenvector Explorer | Eigenvalues, Stable Axes | ⏳ |
+| 05A | Solar System Simulator | Real Physics + NASA JPL API | ⏳ |
+| **05B** | **PROJECT VOID** | Non-Uniform Gravity + Custom A* | ⏳ |
+| 06 | Neural Network Visual Simulator | Backprop, PyTorch | ⏳ |
+| 07 | Optical Fiber & Internet Simulator | Wave Physics | ⏳ |
+| 08 | VOID AI — RL Navigator | Gymnasium + SB3 | ⏳ |
+| 09 | Omniverse Digital Twin | OpenUSD + NVIDIA Omniverse | ⏳ |
 
 ---
 
@@ -147,6 +162,9 @@ det(M₂ · M₁) = det(M₂) × det(M₁)
 *BCA Student · Kanpur, India → The World*
 
 > "Mathematics is the language of the universe. I am learning to read it."
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/divyansh-ailani-225925380/)
+[![GitHub](https://img.shields.io/badge/GitHub-divyanshailani-181717?style=flat-square&logo=github)](https://github.com/divyanshailani)
 
 ---
 
