@@ -15,12 +15,15 @@
 
 > Run `python3 preview.py` and pick any preset. Here's what it looks like:
 
-| det = 0 Collapse | Rotation 90° | Shear |
+| Rotation 90° | Shear | Scale 2x |
 |:---:|:---:|:---:|
-| ![collapse demo](docs/assets/collapse_demo.gif) | ![rotation demo](docs/assets/rotation_demo.gif) | ![shear demo](docs/assets/shear_demo.gif) |
-| Space folds to a line | Area preserved, î ĵ swap | Grid slides, det stays 1 |
+| ![rotation](docs/assets/rotation_90_demo.gif) | ![shear](docs/assets/shear_demo.gif) | ![scale](docs/assets/scale2x_demo.gif) |
+| det = 1 · area preserved · î ĵ swap | det = 1 · grid slides · shape changes | det = 4 · area grows by 4× |
 
-> 📸 *GIFs coming soon — Phase 1 is complete and running. Clone & run to see it live.*
+| det = 0 Collapse | Identity |
+|:---:|:---:|
+| ![collapse](docs/assets/collapse_demo.gif) | ![identity](docs/assets/identity_demo.gif) |
+| Space folds to a line · no inverse exists | The untransformed baseline |
 
 ---
 
@@ -64,7 +67,7 @@ LA-Visual-Engine/
 │   ├── math_utils.py    ← lerp, compose, det_status, verify_composition
 │   └── preview.py       ← Matplotlib CLI animator — run this
 │
-├── 🎨 Phase_2_Blender/  ← Coming soon
+├── 🎨 Phase_2_Blender/  ← Coming post-exams
 │   ├── scenes/
 │   └── utils/
 │
