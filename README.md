@@ -168,9 +168,9 @@ det(M₂ · M₁) = det(M₂) × det(M₁)
 | # | Project | Core Concept | Status |
 |---|---|---|---|
 | **01** | **2D Linear Transform Animator** ← *here* | Vectors, Det, Basis | ✅ Both phases done |
-| 02 | Coordinate System Translator | Change of Basis | ⏳ |
-| 03 | Geometric Linear System Solver | Cramer's Rule | ⏳ |
-| 04 | Eigenvector Explorer | Eigenvalues, Stable Axes | ⏳ |
+| 02 | Coordinate System Translator | Change of Basis | ✅ Both phases done |
+| 03 | Geometric Linear System Solver | Cramer's Rule | ✅ Both phases done |
+| 04 | Eigenvector Explorer | Eigenvalues, Stable Axes | ✅ Both phases done |
 | 05A | Solar System Simulator | Real Physics + NASA JPL API | ⏳ |
 | **05B** | **PROJECT VOID** | Non-Uniform Gravity + Custom A* | ⏳ |
 | 06 | Neural Network Visual Simulator | Backprop, PyTorch | ⏳ |
