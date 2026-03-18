@@ -73,6 +73,8 @@ Phase 2 → Blender 5 + bpy               ✅ Complete
 LA-Visual-Engine/
 │
 ├── 📄 README.md
+├── 📄 requirements.txt
+├── 📄 LICENSE
 │
 ├── 🐍 Phase_1_Logic/
 │   ├── matrices.py           ← All 8 transformation matrices + presets dict
@@ -98,7 +100,7 @@ LA-Visual-Engine/
 
 ### Phase 1 — Python Logic
 ```bash
-pip3 install numpy matplotlib
+pip3 install -r requirements.txt
 cd Phase_1_Logic
 python3 preview.py
 ```
@@ -123,6 +125,16 @@ projection_x   → Project to x-axis  det =  0  (collapse!)
 det_0_collapse → Space collapses    det =  0
 det_neg_flip   → Orientation flip   det = -1
 ```
+
+---
+
+## ✅ Verification
+
+A successful Phase 1 run should:
+- print the available preset list in the terminal
+- open a Matplotlib window after you choose a preset like `shear` or `rotation_90`
+- animate the grid and basis vectors from identity to the selected matrix
+- update the chart title with determinant status as the animation progresses
 
 ---
 
